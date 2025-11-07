@@ -5,20 +5,20 @@
 class Red < Formula
   desc ""
   homepage ""
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hirotake111/red/releases/download/v0.1.6/red_Darwin_x86_64.tar.gz"
-      sha256 "9248058dfc7e4f6c38628ede25f1a97c58d6f12cc4d3f0a14dcf6f737d409d5b"
+      url "https://github.com/hirotake111/red/releases/download/v0.1.7/red_Darwin_x86_64.tar.gz"
+      sha256 "aae7fed57aee76f145d45c5344836487197a1ed3301811f55948f789dbd9669a"
 
       def install
         bin.install "red"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hirotake111/red/releases/download/v0.1.6/red_Darwin_arm64.tar.gz"
-      sha256 "ee20b61ba0e812b3332a437f2fd379ef6fb0b9640715d1299a482beeba402665"
+      url "https://github.com/hirotake111/red/releases/download/v0.1.7/red_Darwin_arm64.tar.gz"
+      sha256 "b5ac20a0af888376a334a20e395a0055da55a6dab7933256652be69fec773a3b"
 
       def install
         bin.install "red"
@@ -28,15 +28,15 @@ class Red < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hirotake111/red/releases/download/v0.1.6/red_Linux_x86_64.tar.gz"
-      sha256 "92a5a700f96e33819a5b196693a757b7949229e21045eabab0575dd7293adfb7"
+      url "https://github.com/hirotake111/red/releases/download/v0.1.7/red_Linux_x86_64.tar.gz"
+      sha256 "01dd914fef646a0c0d54babfd2e03329e9eea92405fba58a015271c404695532"
       def install
         bin.install "red"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hirotake111/red/releases/download/v0.1.6/red_Linux_arm64.tar.gz"
-      sha256 "1977b3cb5a9bfb6f48ee44562b6f5528c034178e5a97e699f091da7d0b14159f"
+      url "https://github.com/hirotake111/red/releases/download/v0.1.7/red_Linux_arm64.tar.gz"
+      sha256 "c6004f43bde9d57041e684b8d7b9bb85b4b9de5708c2a439d85e48bde92ebed5"
       def install
         bin.install "red"
       end
