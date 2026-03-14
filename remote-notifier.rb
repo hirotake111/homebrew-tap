@@ -10,7 +10,7 @@ class RemoteNotifier < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/hirotake111/remote-notifier/releases/download/v0.1.3/remote-notifier_0.1.3_darwin_amd64.tar.gz"
-    sha256 "100570cdda75a16a66a346b1fa2a67ff4fbddb65ded7d68984c4cc920fbe33ca"
+    sha256 "b86ef0b429cf502d80698ccc5518b9a2d8edf943e90baa0c4695ae254311636a"
 
     define_method(:install) do
       bin.install "remote-notifier"
@@ -18,7 +18,7 @@ class RemoteNotifier < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/hirotake111/remote-notifier/releases/download/v0.1.3/remote-notifier_0.1.3_darwin_arm64.tar.gz"
-    sha256 "bb6f1c321ab418e4034db690cce9fc935ec6596c20042e5f872bf6c921a6c920"
+    sha256 "8d587958589c2d1babac794fd53d35a1f658fd186bd5d57e4bdac1af2318486b"
 
     define_method(:install) do
       bin.install "remote-notifier"
